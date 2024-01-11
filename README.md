@@ -14,14 +14,35 @@ including chicken, cow, dog, fruitfly, frog, mouse, pig, rat, rhesus, worm and z
 ## Animal-APdb workflow
 
 ![Animal-APdb workflow](./workflow.jpg "Flow chart of Animal-APdb")
-
-
+  
 ### RNA-seq data processing
+- Quality control: FastQC (version: v.0.11.8)  
+```
+fastqc [-o output dir] [-f fastq|bam|sam][-t threads] seqfile1 .. seqfileN
+```
 
+- Cleaning: Trim Galore (version: 0.6.4_dev)
+```
+trim_galore -q 25 -e 0.1 --phred33 --length 36 --stringency 3 seqfile1_1 seqfile1_2
+```
+- Alignment: HISAT2
+```
+hisat2 -p 30 -x indexfile -1 seqfile1_1 -2 seqfile1_2 
+```
 ### Identify Alternative Promoters with proActiv
-
+[*proActiv*](https://goekelab.github.io/proActiv/) was used in identifying and quantifying alternative promoters.
+``` 
+identify_AP.R
+```
 ### Identify trait-related APs
-
+```R
+identify traitRelated_AP.R
+```
 ### Identify AP-regulator eRNA
-
+```R
+identify_eRNA.R
+```
 ### Identify AP-regulator TF
+```R
+identify_TF.R
+```
