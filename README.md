@@ -5,12 +5,15 @@ At present, hundreds of thousands of alternative promoters have been identified 
 However, alternative promoter profiles in animals have not been fully recognized. To reveal the landscape of alternative promoter usage and associated factors, 
 we constructed the <strong><font color="#f66b0e">Animal</font> <font color="#f66b0e">A</font>lternative <font color="#f66b0e">P</font>romoter <font color="#f66b0e">D</font>ata<font color="#f66b0e">b</font>ase </strong> <strong> <font color="#f66b0e"> (Animal-APdb)  </font>  </strong>  using RNA-seq data from 6,514 samples of 11 species, 
 including chicken, cow, dog, fruitfly, frog, mouse, pig, rat, rhesus, worm and zebrafish.   
-**In In Animal-APdb, users can:**  
+**In In [Animal-APdb](http://gong_lab.hzau.edu.cn/Animal_AP#!/), users can:**  
 ✔️  Query the **alternative promoter** usage by selecting species, tissue, and input gene names interested.  
 ✔️  Browse **traits-related** alternative promoters that are associated with developmental stage, gender in each tissue of each species.  
 ✔️  Search **eRNAs** that may regulate alternative promoter events in each tissue of each species.  
 ✔️  Search **transcription factors** that may regulate alternative promoter events in each tissue of each species.  
 ✔️ **Download** alternative promoter information across different tissues of each species.
+## Animal-APdb workflow
+
+![Animal-APdb workflow](./workflow.jpg "Flow chart of Animal-APdb")
 
 
 ### RNA-seq data processing
