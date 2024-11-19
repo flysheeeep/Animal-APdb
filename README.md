@@ -13,7 +13,7 @@ including chicken, cow, dog, fruitfly, frog, mouse, pig, rat, rhesus, worm and z
 ✔️ **Download** alternative promoter information across different tissues of each species.
 ## Animal-APdb workflow
 
-![Animal-APdb workflow](./workflow.jpg "Flow chart of Animal-APdb")
+![Animal-APdb workflow](./workflow1.png "Flow chart of Animal-APdb")
   
 ### RNA-seq data processing
 - Quality control: FastQC (version: v.0.11.8)  
